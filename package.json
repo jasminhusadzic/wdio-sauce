@@ -1,0 +1,28 @@
+{
+  "name": "wdio-sauce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:run": "cross-env wdio run ./wdio.conf.ts",
+    "test:run:dev": "BASE_URL=https://www.saucedemo.com npm run test:run",
+    "test:run:prod": "BASE_URL=https://www.saucedemo.com npm run test:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-priv:jasminhusadzic/wdio-sauce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^8.27.1",
+    "@wdio/local-runner": "^8.27.0",
+    "@wdio/mocha-framework": "^8.27.0",
+    "@wdio/spec-reporter": "^8.27.0",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "wdio-wait-for": "^3.0.10",
+    "@faker-js/faker": "^8.0.2"
+  }
+}
